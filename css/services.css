@@ -300,6 +300,9 @@ text-align: center;
   .ser-head{
     padding: 0px;
   }
+  .ser-head p{
+  padding: 0 2rem 0 2rem;
+  }
   .ser-head h1{
   padding-top: 120px;
   text-align: center;
@@ -578,6 +581,9 @@ margin-top: -3rem;
   .dev-1{
     max-width: 600px;
     width: auto;
+  }
+  .development img{
+    width: 100%;
   }
 }
 @media screen and (min-width : 500px) and (max-width : 992px) {
