@@ -585,11 +585,23 @@ margin-top: -3rem;
   .development img{
     width: 100%;
   }
+  .ser-img-2 img{
+    margin-top: -5.5rem;
+  }
+  .ser-img-3 img {
+    margin-top: -5rem;
+  }
+  .ser-img-4 img{
+    margin-top: -6rem;
+  }
 }
 @media screen and (min-width : 500px) and (max-width : 992px) {
   .ser-img img{
 width:300px;
   }
+}
+@media screen and (min-width : 992px) and (max-width : 1250px)  {
+  
 }
 /* foooter */
 

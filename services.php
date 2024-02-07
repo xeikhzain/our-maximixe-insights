@@ -11,12 +11,12 @@ include 'includes/header.php';
   </div>
   <div class="container text-center">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="col-lg-7 col-md-6 col-sm-12">
         <div class="ser-head">
           <p style="text-align: left;">At Maximise Insights, our Software Development services are tailored to empower your brand vision. From customized software solutions to specialized ERP and Inventory Management systems, we bring simplicity and efficiency to your digital landscape.</p></span>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12" id="ser-img-id">
+      <div class="col-lg-5 col-md-6 col-sm-12" id="ser-img-id">
         <div class="ser-img-4"><img  class=" text-center" src="./assets/Typing-bro.png" alt=""></div>
       </div>
     </div>

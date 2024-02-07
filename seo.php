@@ -11,7 +11,7 @@ include 'includes/header.php';
 </div>
 <div class="container text-center">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-7 col-md-6 col-sm-12">
             <div class="ser-head">
                 <p style="text-align: left;">As a full-service, multi-channel digital media powerhouse, we offer bespoke
                     digital media services for a range of small and large businesses. We drive explosive growth for
@@ -20,7 +20,7 @@ include 'includes/header.php';
                     to new channels. </p></span>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12" id="ser-img-id">
+        <div class="col-lg-5 col-md-6 col-sm-12" id="ser-img-id">
             <div class="ser-img-2"><img class=" text-center" src="assets/Marketing-amico.png" alt=""></div>
         </div>
     </div>
