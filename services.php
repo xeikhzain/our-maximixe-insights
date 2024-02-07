@@ -7,7 +7,7 @@ include 'includes/header.php';
   </video>
   <!-- Front  -->
   <div class="ser-head">
-  <h1>SOFTWARE DEVELOPMENT</h1>
+  <h1>SEO (Search Engine Optimization)</h1>
   </div>
   <div class="container text-center">
     <div class="row">
@@ -25,41 +25,41 @@ include 'includes/header.php';
     <div class="row">
       <div class="col-lg-5 col-md-12 col-sm-12">
         <div class="development">
-          <h1 style="text-align: center;"><b>Software Solutions Built For You</b></h1>
+          <h1 style="text-align: center;"><b>SEO (Search Engine Optimization)</b></h1>
           <img src="./assets/Online world-amico.svg" alt="" class="img-fluid text-center">
         </div>
       </div>
       <div class="col-lg-7 col-md-12 col-sm-12 main-div-development">
               <div class="dev-1 mb-3">
                 <div class="dev-h text-center">
-                  <h3>Customized Software Development</h3>
+                  <h3>Keyword Optimization</h3>
                 </div>
                 <div class="devp">
-                  <p>Our custom software development ensures a perfect fit for your unique business needs. No one-size-fits-all – just intuitive solutions that align with your unique vision and objectives.</p>
+                  <p>Our SEO experts conduct thorough keyword research, optimizing your website content to ensure it aligns with the search queries of your target audience.</p>
                 </div>
               </div>
               <div class="dev-1 mb-3">
                 <div class="dev-h text-center">
-                  <h3>. Customized ERP Development</h3>
+                  <h3>Backlink Strategies</h3>
                 </div>
                 <div class="devp">
-                  <p>Transform intricate business processes into streamlined operations with our ERP development. Enhance productivity and decision-making through a cohesive and efficient system.</p>
+                  <p>Build authority organically. Our backlink strategies enhance your website's credibility, fostering connections with authoritative sites and boosting your search engine rankings.</p>
                 </div>
               </div>
               <div class="dev-1 mb-3">
                 <div class="dev-h text-center">
-                  <h3>Customized Inventory Management Software</h3>
+                  <h3>Local SEO Tactics</h3>
                 </div>
                 <div class="devp">
-                  <p>Master your inventory effortlessly with our Inventory Management software. Enjoy precise control, minimize errors, and optimize your supply chain for improved efficiency.</p>
+                  <p>Capture local markets successfully. We employ targeted local SEO tactics, optimizing your online presence for location-based searches and ensuring visibility in your key markets.</p>
                 </div>
               </div>
               <div class="dev-1 mb-3">
                 <div class="dev-h text-center">
-                  <h3>User-Friendly Design</h3>
+                  <h3>Continuous Monitoring</h3>
                 </div>
                 <div class="devp">
-                  <p>Put users first. Our interfaces are designed with simplicity in mind, ensuring that both you and your end-users experience software that's intuitive and easy to navigate.</p>
+                  <p>Stay ahead with continuous SEO monitoring. We adapt strategies to evolving algorithms, ensuring sustained visibility, higher rankings, and continued relevance in the rapidly evolving digital landscape.</p>
                 </div>
               </div>
             </div>
