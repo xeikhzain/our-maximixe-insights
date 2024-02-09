@@ -80,7 +80,7 @@
     <p class="copy-right" style="text-align:center;color: aliceblue; text-align: center;
   color: aliceblue;
   font-size: 12px;
-  font-weight: 200; margin: 0 auto;">2024 © All rights reserved by Maximize Insights</p>
+  font-weight: 200; margin: 0 auto;">2024 © All rights reserved by <span>Maximize Insights.</span></p>
 </footer>
 
 

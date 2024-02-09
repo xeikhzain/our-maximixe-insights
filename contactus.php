@@ -3,7 +3,7 @@
 include 'includes/header.php';
 ?>
 
-    <video id="home-video" style="position: absolute;" autoplay muted loop>
+    <video id="home-video" autoplay muted loop>
         <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
     </video>
     <!-- icons -->

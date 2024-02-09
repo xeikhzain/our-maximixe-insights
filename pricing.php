@@ -47,7 +47,7 @@ include 'includes/header.php';
             </ul>
         </div>
         <!-- web design -->
-        <div class="tab-content flip-right PricingCard" id="design" style="display: flex;">
+        <div class="tab-content flip-right PricingCard" id="design">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
                 <div class="p-3">

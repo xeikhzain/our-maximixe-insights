@@ -388,6 +388,10 @@ transform: scale(0.9);
 animation: flipRight 0.5s ease-in-out;
 }
 
+.industry-content{
+  display: flex;
+  align-items: center;
+}
 @keyframes flipRight {
 0% {
   transform: rotatey(90deg) scale(0.8);
@@ -451,16 +455,14 @@ width: 0.333333%;
 .indus-img img{
 width: 100%;
 border-radius: 20px;
-border: 2px solid #002966;
+/* border: 2px solid #002966; */
 margin: auto;
 display: block;
 position: sticky;
 }
 .indus-container{
 max-width: 1410px ;
-
-padding: 40px 40px 40px 40px ;
-
+padding: 40px ;
 } 
 
 .indus-height{
@@ -498,7 +500,10 @@ box-shadow: inset 0 0 5px grey;
 border-radius: 10px;
 }
 
-
+.industries-heading{
+  color: #002966;
+  font-weight: bold;
+}
 @media (max-width: 1130px){
 
 .col-lg-1 {
@@ -534,16 +539,7 @@ width: 100%;
 .vertical-line{
   display: none;
 }
-.indus-height{
-  margin: 1px;
-  height: 460px;
-  overflow: scroll;
-  overflow-x: hidden;
-  border: 1px solid rgba(148, 139, 139, 0.487);
-  border-radius:20px ;
-  margin: 20px 0;
-  padding: 10px;
-}
+
 
 }
 @media only screen and (max-width: 768px) {
@@ -552,8 +548,6 @@ width: 100%;
     overflow: scroll;
     overflow-x: hidden;
   }
-
-
 }
 @media only screen and (max-width: 768px){
 .container {

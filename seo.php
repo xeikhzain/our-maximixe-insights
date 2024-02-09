@@ -26,7 +26,7 @@ include 'includes/header.php';
     </div>
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="development ">
                 <h1 style="text-align: center;"><b>All-in-One Social Media Marketing to Boost Marketing Efforts</b></h1>

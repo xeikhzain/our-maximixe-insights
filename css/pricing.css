@@ -298,7 +298,7 @@
     color: #002966;
     font-weight: bold;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 37px;
   }
   
   .text {
@@ -317,6 +317,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0 50px;
   }
   
   .tab-buttons {
@@ -325,13 +326,14 @@
     overflow: hidden;
     text-align: center;
     justify-content: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 30px;
     flex-wrap: wrap;
-    /* gap: 50px; */
-  }
+    gap: 20px !important;
+    padding: 0;
+}
   .tab.active {
-    background-color:#ff9600;
+    background-color:#ff9600 !important;
     color: white ; /* Optional: Change text color when active */
     /* Add any other styling you want for the active state */
 }
@@ -362,15 +364,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 20px;
+      /* margin: 20px; */
       transition: 0.2s ease;
   }
   
-  .buttons-outer {
+  /* .buttons-outer {
     text-align: center;
     padding: 1px 30px 0px 0px;
   }
-  
+   */
   .tab-buttons li:hover {
     color: #ffffff;
     background:   #002966;
@@ -403,24 +405,24 @@
   .PricingCard .card {
     position: relative;
     text-align: center;
-    border-radius: 20px !important; /* Updated border-radius */
+    border-radius: 20px !important;
     overflow: hidden;
-    border:1px solid rgba(147, 144, 144, 0.349);
-     background: linear-gradient(145deg, #f0f0f0, #f0f0f04a);
+    border: 1px solid rgba(147, 144, 144, 0.349);
+    background: linear-gradient(145deg, #f0f0f0, #f0f0f04a);
     box-shadow: 2px 5px 10px rgba(128, 128, 128, 0.527);
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    zoom: 0.9;
-  }
+    width: 300px !important; 
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 50px; */
+    /* zoom: 0.9; */
+}
   
   .bg-successs {
-    position: relative;
-    padding: 0px 0px 0px  20px ;
+    background-color: #2BBCEF;
+    display: flex;
   }
   
-  .bg-successs::before {
+  /* .bg-successs::before {
     content: '';
     position: absolute;
     top: 0;
@@ -431,17 +433,17 @@
     
 }
  .bg-successs::before {
-    left: -50px; /* Adjust the distance from the left side */
-  }
+    left: -50px; 
+  } */
   .bg-price{
     background-color:  #002966;
   }
   .bg-price-3 {
-    position: relative;
-    padding: 0px 20px 0px 10px ;
+    background-color:  #fca62d;
+    display: flex;
   }
   
-  .bg-price-3::before {
+  /* .bg-price-3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -452,8 +454,8 @@
     
 }
  .bg-price-3::before {
-    right: -50px; /* Adjust the distance from the left side */
-  }
+    right: -50px;
+  } */
   
 
   
@@ -467,8 +469,8 @@
     margin: auto;
     line-height: 25px;
     text-transform: uppercase;
-    text-align: left;
-
+    display: flex;
+    justify-content: center;
   }
   
 
@@ -672,10 +674,7 @@
   }
   
   @media (max-width: 370px) {
-    .PricingCard .card {
-      width: 300px;
-      
-    }
+    
     .sec-title {
       padding: 0 25px;
     }
@@ -710,6 +709,9 @@
   
   .flip-right {
     animation: flipRight 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
   
   @keyframes flipRight {
@@ -837,6 +839,49 @@ text-decoration: none;
   margin: 0 auto;
 
 }
+@media (max-width: 450px) {
+  .table-pri {
+  font-size: 30px;
+}
+}
+@media (max-width: 600px) {
+  .tab-buttons li {
+    position: relative;
+    color: #777777;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(147, 144, 144, 0.349);
+    float: left;
+    cursor: pointer;
+    border-radius: 0 !important;
+    background-color: rgb(234 234 234 / 77%);
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 1;
+    padding: 0 35px;
+    justify-content: flex-start;
+}
+.tab-buttons {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  /* border-radius: 5px; */
+  /* margin-top: 30px; */
+  /* flex-wrap: wrap; */
+  gap: 0 !important;
+}
+.buttons-outer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 ;
+}
+}
 @media (max-width: 767px) {
   .para{
     padding: 0 5px;
@@ -859,80 +904,77 @@ text-decoration: none;
 .h1-test{
   font-size: 6vw;
 }
+nav {
+  text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    text-align: center;
-  }
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 20px;
+}
 
-  .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    padding-bottom: 20px;
-  }
+.main_img {
+  display: none;
+}
 
-  .main_img {
-    display: none;
-  }
+.frame {
+  /* margin-left:15% ; */
+  width: 260px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px rgba(128, 128, 128, 0.25);
+  padding-left: 20px;
+  padding-top: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.218);
+}
 
-  .frame {
-    /* margin-left:15% ; */
-    width: 260px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.13);
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 2px rgba(128, 128, 128, 0.25);
-    padding-left: 20px;
-    padding-top: 10px;
-    border: 2px solid rgba(128, 128, 128, 0.218);
-  }
+.container {
+  max-width: var(--container);
+  padding: 0 1rem;
+  margin: 0 auto;
 
-  .container {
-    max-width: var(--container);
-    padding: 0 1rem;
-    margin: 0 auto;
+}
 
-  }
+.main_h {
+  color: #002966;
+  font-weight: bold;
+  position: relative;
+  font-size: 30px;
+}
 
-  .main_h {
-    color: #002966;
-    font-weight: bold;
-    position: relative;
-    font-size: 30px;
-  }
+.blogs img {
+  display: none;
+}
 
-  .blogs img {
-    display: none;
-  }
+.news img {
+  display: none;
+}
 
-  .news img {
-    display: none;
-  }
+.nav-item.dropdown:hover .dropdown-menu {
+  text-align: center;
+  width: 58%;
+  justify-content: center;
+  font-size: 14px;
+  margin: auto;
+}
 
-  .nav-item.dropdown:hover .dropdown-menu {
-    text-align: center;
-    width: 58%;
-    justify-content: center;
-    font-size: 14px;
-    margin: auto;
-  }
+.nav-item.dropdown .dropdown-menu {
+  text-align: center;
+  width: 58%;
+  justify-content: center;
+  font-size: 14px;
+  margin: auto;
+}
 
-  .nav-item.dropdown .dropdown-menu {
-    text-align: center;
-    width: 58%;
-    justify-content: center;
-    font-size: 14px;
-    margin: auto;
-  }
+.dropdown-menu {
+  text-align: center
+}
 
-  .dropdown-menu {
-    text-align: center
-  }
 
-  
 }
 
 

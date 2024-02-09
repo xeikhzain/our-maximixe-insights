@@ -98,6 +98,7 @@ nav {
   font-size: 16px;
 }
 
+
 @media (min-width: 768px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -220,6 +221,22 @@ nav {
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.234);
 }
 
+@media (max-width: 990px) {
+  #navbarSupportedContent {
+    padding: 0 0 15px 25px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: baseline;
+}
+.collapse{
+  text-align: start;
+}
+  .btn-conteiner {
+    display: flex;
+    justify-content: start !important;
+    margin-top: 10px;
+}
+}
 @media only screen and (min-width: 988px) and (max-width: 1245px) {
   .logo {
     width: 120px;
@@ -280,7 +297,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* margin-top: 5rem; */
+  margin-top: 2rem;
 }
 
 .hero-img {
@@ -318,7 +335,11 @@ nav {
   color: white;
   z-index: 1;
   background-color: #ff9600;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; 
+}
+.btn-a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .Learn_more::before {
@@ -465,7 +486,7 @@ nav {
 }
 
 .num1 {
-  border: 2px solid rgba(128, 128, 128, 0.397);
+  border: 1px solid rgba(128, 128, 128, 0.397);
   background-color: rgba(255, 255, 255, 0.166);
   backdrop-filter: blur(2px);
   /* padding: 10px; */
@@ -473,6 +494,9 @@ nav {
   width: 320px;
   border-bottom-right-radius: 30px;
   box-shadow: 1px 5px 7px rgba(128, 128, 128, 0.175);
+}
+.num1:hover{
+  border: 1px solid #ff9600;
 }
 
 .head {
@@ -529,6 +553,10 @@ nav {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(3px);
   transition: 0.3s ease;
+}
+.cards:hover{
+  border: 1px solid #ff9600;
+
 }
 
 .cards img {
@@ -824,9 +852,6 @@ nav {
 }
 
 
-
-
-
 /* Services */
 
 
@@ -1044,7 +1069,7 @@ header {
   padding: 0rem 3rem;
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
-  place-items: center start;
+  /* place-items: center start; */
 }
 
 .tab-img {
@@ -1125,6 +1150,7 @@ header {
   color: #262626;
   height: 170px;
   font-size: 13px;
+  /* overflow-x: hidden; */
 }
 
 .box-area .img-area {
@@ -1207,7 +1233,7 @@ header {
 }
 
 .test-text {
-  padding: 20px 0 0 0;
+  padding: 0 !important;
   text-align: center;
 }
 
@@ -1346,15 +1372,22 @@ header {
   color: white;
 }
 
-
+@media (max-width: 400px) {
+  .socials {
+    margin-top: 50px;
+}
+.box-area {
+  height: 370px;
+}
+}
 
 /* //////////////////////media query////////////// */
 
 @media (max-width: 767px) {
+  
   .tab-filter-item-container {
     height: 470px !important;
 }
-
 
   .logos {
     overflow: hidden;
@@ -1641,12 +1674,6 @@ header {
 
 }
 
-@media only screen and (max-width: 991px) {
-  .owl-nav {
-    display: none;
-  }
-
-}
 
 @media only screen and (max-width: 500px){
   .main {
@@ -1683,7 +1710,8 @@ header {
 width: 180px !important;
 } */
 .numbers, .numbers-3, .numbers-4 {
-  font-size: 22px !important;
+  font-size: 18px !important;
+  margin: 5px 0;
 }
 
 }
@@ -1717,6 +1745,11 @@ width: 180px !important;
 }
 }
 
+@media screen and (max-width : 1175px) {
+  .box-area .contents {
+    overflow-x: hidden;
+}
+}
 @media screen and (max-width : 1050px) {
 
   /* .tab-item.select_tab {
@@ -1743,12 +1776,6 @@ width: 180px !important;
   .num1 {
     width: 200px;
   }
-
-  .numbers-3, .numbers-4 {
-    color: orange !important;
-    margin-top: 10px;
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width : 990px) {
@@ -1760,7 +1787,9 @@ width: 180px !important;
     /* margin-top: 30%; */
     width: auto;
   }
-
+  .owl-nav {
+    display: none;
+  }
   .tab-item.select_tab {
     padding: 0px 0rem;
   }
@@ -1858,15 +1887,15 @@ width: 180px !important;
    background: none;
    gap: 15px;
 }
-  .num1 {
-    width: 130px !important;
+.num1 {
+  border-top-left-radius: 15px;
+  width: 115px !important;
+  border-bottom-right-radius: 15px;
 }
-.numbers-3, .numbers-4 {
-  font-size: 18px !important;
-}
+
 .stats-para {
   font-size: 9px !important;
- 
+  margin-bottom: 5px !important;
 }
 
   .main {
@@ -2024,7 +2053,6 @@ width: 180px !important;
 }
 @media (max-width: 480px) {
   .card-container {
-   
     align-items: center;
   }
   .le_m {

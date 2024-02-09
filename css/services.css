@@ -378,8 +378,11 @@ width: 50%;
   border-bottom-left-radius: 30px;
   width: 600px;
   height: auto;
-  border: 2px solid rgba(128, 128, 128, 0.431); 
+  border: 1px solid rgba(128, 128, 128, 0.431); 
 box-shadow: 5px 10px 5px rgba(128, 128, 128, 0.276);
+}
+.dev-1:hover{
+  border: 1px solid #ff9600; 
 }
 
 .dev-1 h3{
@@ -421,6 +424,7 @@ font-size: 32px;
 padding-top: 20px;
 text-align: center;
 }
+
 .ser-head p span{
   display: none;
 }
@@ -575,6 +579,14 @@ padding-top: 0rem;
     margin-top: 5rem;
     padding-left: 4.6rem;
   }
+  .ser-head h5{
+    margin-left: 4.6rem;
+    color: #002966;
+    width: fit-content;
+   
+  }
+
+
   .ser-head p{
 margin-top: -3rem;  
   }

@@ -46,9 +46,9 @@ include 'includes/header.php';
       </div>
 <!-- Education -->
 <div class="col-lg-9 indus-height  show" id="education">
-  <div class="row">
+  <div class="row"  style="align-items: center">
     <div class="col-lg-7">
-      <h1 class="text-primary">Education</h1>
+      <h1 class="industries-heading">Education</h1>
       <p>Ever since the pandemic, the infusion of technology in education has been more than just a trend. It has become a necessity. Maximise Insights understands the unique challenges facing education and is here to provide human-centric tech solutions. Our education design agency aims to make learning accessible, engaging, and innovative. Our mission is to seamlessly integrate technology into education, creating an inclusive learning experience for all.</p>
     </div>
     <div class="col-lg-5">
@@ -60,7 +60,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>
     Learning Management Systems (LMS)</h4>
     <p>Revolutionize education delivery with our Learning Management Systems. We create intuitive platforms that empower educators to organize content, facilitate communication, and track student progress efficiently.</p>
@@ -82,9 +82,9 @@ include 'includes/header.php';
 
 <!-- finance -->
 <div class="col-lg-9 indus-height" id="finance">
-  <div class="row">
+  <div class="industry-content">
     <div class="col-lg-7">
-      <h1 class="text-primary">Finance</h1>
+      <h1 class="industries-heading">Finance</h1>
       <p>Welcome to Maximise Insights, a fintech design agency where we set on a journey to redefine finance through digital innovation. Our mission is to be your strategic ally, empowering financial institutions with custom web solutions that not only enhance customer experiences but also revolutionize the way financial transactions are conducted securely.</p>
     </div>
     <div class="col-lg-5">
@@ -96,7 +96,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>Easy Banking Experiences</h4>
   <p>Enjoy seamless banking portals designed for user-friendly experiences. Our solutions simplify account management, transactions, and financial planning to make your journey in finance effortless.</p><br>
   <h4>Secure Payment Gateways</h4>
@@ -114,7 +114,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="transport">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Logistics and Distribution</h1>
+      <h1 class="industries-heading">Logistics and Distribution</h1>
       <p>In the world of logistics, businesses face a multitude of challenges, from unpredictable demand to the constant fluctuation of fuel costs. These complexities make it a difficult task to maintain efficiency while meeting customer expectations. Our logistics design firm aims to unravel the intricacies of logistics, providing businesses with the tools to streamline operations, enhance visibility, and ultimately conquer the hurdles that come with transportation and distribution. </p>
     </div>
     <div class="col-lg-5">
@@ -126,7 +126,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>Supply Chain Visibility Platforms</h4>
   <p>Design platforms that provide real-time visibility into the supply chain. Our solutions empower businesses to track and manage inventory, shipments, and delivery schedules, ensuring optimal efficiency.</p><br>
   <h4>Warehouse Management Systems</h4>
@@ -144,7 +144,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="realestate">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Real Estate</h1>
+      <h1 class="industries-heading">Real Estate</h1>
       <p>Imagine effortlessly exploring homes through virtual tours, making informed decisions with detailed property showcases, and smoothly navigating transactions with just a few clicks. From streamlining transactions to transparent communication, it is about making buying or selling a home a more accessible, convenient, and engaging experience for everyone involved. Our real estate design agency is at the forefront of this tech revolution. </p>
     </div>
     <div class="col-lg-5">
@@ -174,7 +174,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="healthcare">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Healthcare</h1>
+      <h1 class="industries-heading">Healthcare</h1>
       <p>Maximise Insights recognizes the challenges faced by healthcare professionals – from optimizing patient care to ensuring data security. Our healthcare design agency aims to bridge these gaps by streamlining workflows, introducing telemedicine capabilities, and prioritizing the confidentiality of patient information. </p>
     </div>
     <div class="col-lg-5">
@@ -186,7 +186,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>Patient-Focused Web Platforms</h4>
   <p>As intuitive platforms that prioritize patient well-being, our solutions empower healthcare providers to efficiently manage patient data and appointments, fostering personalized and compassionate care.</p><br>
   <h4>Telemedicine Integration</h4>
@@ -205,7 +205,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="technology">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Travel and Hospitality</h1>
+      <h1 class="industries-heading">Travel and Hospitality</h1>
       <p>Hospitality business frequently faces real-life challenges, like keeping up with changing travel trends, meeting unique guest needs, and managing staffing shortages. At Maximise Insights, we get it. Imagine tailored web solutions as tools that help businesses effortlessly handle these challenges, creating smooth and unforgettable experiences for both guests and the teams that make it all happen. </p>
     </div>
     <div class="col-lg-5">
@@ -217,7 +217,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>
     User-Friendly Booking Platforms</h4>
     <p>Create booking platforms that prioritize ease of use. Our hospitality design firm simplifies the booking process, offering travelers a seamless journey from exploration to reservation.</p><br>
@@ -237,7 +237,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="telecom">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Telecom</h1>
+      <h1 class="industries-heading">Telecom</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat tempora maiores animi consectetur. Iusto accusantium, unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!!unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!</p>
     </div>
     <div class="col-lg-5">
@@ -249,7 +249,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3>
+  <h3 class="industries-heading">What We Do?</h3>
  </p>
 </div>
 </div>
@@ -259,7 +259,7 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="retail">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="text-primary">Retail and Ecommerce</h1>
+      <h1 class="industries-heading">Retail and Ecommerce</h1>
       <p>In the dynamic world of retail, where customer expectations evolve at the speed of technology, our retail and ecommerce design firm stands as your strategic partner. As the retail landscape undergoes a digital transformation, our goal is to empower businesses with customized web solutions that elevate customer engagement, streamline operations, and drive online and offline sales.</p>
     </div>
     <div class="col-lg-5">
@@ -271,7 +271,7 @@ include 'includes/header.php';
  <hr>
  <div class="content">
  <p>
-  <h3 class="text-primary">What We Do?</h3><br>
+  <h3 class="industries-heading">What We Do?</h3><br>
   <h4>Ecommerce Platforms</h4>
   <p>Create visually appealing and user-friendly online stores that not only captivate but also convert. We optimize the user journey, from product discovery to checkout, ensuring a seamless shopping experience.</p><br>
   <h4>Mobile Commerce Integration</h4>

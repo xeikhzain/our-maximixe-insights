@@ -24,7 +24,7 @@ include 'includes/header.php';
           <p class="main_p" id="h-heain-para">At Maximise Insights, our services are meticulously crafted to guarantee you don't just
             exist in the digital landscape – you dominate it. Discover the best language for web development with us as
             your trusted front-end, Back-end, full-stack web development company.</p>
-          <button class="Learn_more le_m" id="h-heain-para"> Learn more!</button>
+          <button class="Learn_more le_m" id="h-heain-para"> <a class="btn-a" href="about.php">Learn more!</a></button>
           <!-- <br><br>
           <div class="frame">
             <div class="spinner1">
@@ -43,22 +43,22 @@ include 'includes/header.php';
   <!-- <br> -->
   <!-- main2 -->
   <div class="box" data-aos="fade-right" data-aos-delay="100">
-    <div class="num-indus"> <!-- Added mx-auto class for centering -->
-      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+    <div class="num-indus">
+      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> 
         <div id="number-container-1">
           <h1 class="numbers" id="number-1"></h1>
         </div>
         <p class="stats-para">Digital Campaigns <br> Sparking Success</p>
       </div>
 
-      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> 
         <div id="number-container-2">
           <h1 class="numbers" id="number-2"></h1>
         </div>
         <p class="stats-para">Tailored Solutions <br> Redefining Industries</p>
       </div>
 
-      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+      <div class="col-lg-4 col-md-5 mb-4 num1 mx-2"> 
         <div id="number-container-3">
           <h1 class="numbers-3" id="number-3"></h1>
         </div>
@@ -110,7 +110,7 @@ include 'includes/header.php';
                 Take a digital leap with us. We excel in creating functional websites that flawlessly exhibit your
                 brand, translating your ideas into a unique online identity.
               </p>
-              <button class="Learn_more le_m"> Learn more!</button>
+              <button class="Learn_more le_m"> <a href="web.php" class="btn-a">Learn more!</a></button>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ include 'includes/header.php';
                 beyond conventional strategies, encompassing full-service marketing, technology marketing, and internet
                 marketing to amplify your online presence
               </p>
-              <button class="Learn_more le_m"> Learn more!</button>
+              <button class="Learn_more le_m"><a href="seo.php" class="btn-a">Learn more!</a></button>
             </div>
           </div>
           <div class="row tab-item ux-design">
@@ -141,7 +141,7 @@ include 'includes/header.php';
                 or wish to stand out among other graphic websites, our graphics design service is dedicated to creating
                 stunning and impactful designs.
               </p>
-              <button class="Learn_more le_m"> Learn more!</button>
+              <button class="Learn_more le_m"><a href="design.php" class="btn-a">Learn more!</a></button>
             </div>
           </div>
           <div class="container tab-item app-development">
@@ -435,8 +435,6 @@ include 'includes/header.php';
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-
                 </h6>
               </div>
             </div>

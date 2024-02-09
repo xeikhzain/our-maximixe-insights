@@ -10,6 +10,9 @@
     flex-direction: column;
   
   }
+  .about-us-heading{
+    font-size: 40px;
+  }
   
   .sec_headin {
     text-align: center;
@@ -38,6 +41,7 @@
     display: flex;
     gap: 40px;
     margin-top: 15px;
+    align-items: center;
 }
   .mission_sec p {
     font-size: 15px;
@@ -152,10 +156,9 @@
         gap: 0;
         transition: ease 0.5s all;
     }
-  
     .box {
         display: flex;
-  
+        padding: 0;
     }
   
     .box-sec-tow {
@@ -210,47 +213,52 @@
   
   @media (max-width: 600px) {
     .sec_headin h2 {
-        font-size: 2.2rem;
+      font-size: 2.2rem;
     }
-  
+    
     .team_sec {
-        width: 90%;
-        transition: ease 0.3s all;
+      width: 90%;
+      transition: ease 0.3s all;
     }
-  
+    
     .mission_sec {
-        width: 90%;
+      width: 90%;
     }
-  
+    
     .boxin-img img {
         height: 70px;
         width: 70px;
         border-radius: 10px;
-    }
-  
-    .boxin-mem h4 {
+      }
+      
+      .boxin-mem h4 {
         font-size: 13px;
         font-weight: 800;
         margin-top: -6px;
-    }
-  
-    .boxin-mem p {
+      }
+      
+      .boxin-mem p {
         font-size: 12px;
         margin-bottom: 15px;
-    }
-  
-    .boxin-des p {
+      }
+      
+      .boxin-des p {
         font-size: 12px;
-    }
-  
-    .sec-left {
+      }
+      
+      .sec-left {
         text-align: end;
         margin-right: 10px;
         margin-left: 0;
+      }
     }
-  }
-  /* foooter */
-
+    @media (max-width: 440px) {
+      .about-us-heading{
+        font-size: 30px !important;
+      }
+    }
+    /* foooter */
+    
 .foot-text1 {
   color: white;
   font-weight: normal;
