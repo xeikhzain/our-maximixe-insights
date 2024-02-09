@@ -122,7 +122,6 @@ nav {
   --color-shadow: #00000080;
 }
 
-
 .btn-content:hover,
 .btn-content:focus {
   transition: 0.5s;
@@ -221,17 +220,40 @@ nav {
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.234);
 }
 
+@media only screen and (min-width: 988px) and (max-width: 1245px) {
+  .logo {
+    width: 120px;
+    height: 60px;
+  }
 
+  .nav-link {
+    font-size: 13px;
+  }
 
+  .con {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    padding-right: 5px;
+  }
+
+  .btn-content {
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+
+}
+.logo {
+  width: 180px !important;
+  height: auto;
+}
 
 /* Navbar */
 
 /* /////////// */
 
-.logo {
-  width: 180px !important;
-  height: auto;
-}
+
 
 
 
@@ -1865,56 +1887,6 @@ width: 180px !important;
 }
 
 
-@media only screen and (min-width: 988px) and (max-width: 1245px) {
-  .logo {
-    width: 120px;
-    height: 60px;
-  }
-
-  .nav-link {
-    font-size: 13px;
-  }
-
-  .con {
-    font-size: 14px;
-  }
-
-  .nav-item {
-    padding-right: 5px;
-  }
-
-  .btn-content {
-    font-size: 10px;
-    padding: 0px 10px;
-  }
-
-}
-
-
-@media only screen and (min-width: 988px) and (max-width: 1245px) {
-  .logo {
-    width: 120px;
-    height: 60px;
-  }
-
-  .nav-link {
-    font-size: 13px;
-  }
-
-  .con {
-    font-size: 14px;
-  }
-
-  .nav-item {
-    padding-right: 5px;
-  }
-
-  .btn-content {
-    font-size: 10px;
-    padding: 0px 10px;
-  }
-
-}
 
 
 
