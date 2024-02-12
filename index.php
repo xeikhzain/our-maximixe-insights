@@ -18,11 +18,10 @@ include 'includes/header.php';
   <div class="main">
     <div class="container">
       <div class="row h-main-content">
-        <div class="col-lg-6 col-md-6 col-sm-12 mt-5 h-heading-content">
+        <div class="col-lg-6 col-md-6 col-sm-12 h-heading-content">
           <h1 class="main_h mt-5">Dominate the Digital Landscape</h1>
           <img src="./assets/Home Page Right Animation-01.png" alt="" class="h-first-img">
-          <p class="main_p" id="h-heain-para">At Maximise Insights, our services are meticulously crafted to guarantee you don't just
-            exist in the digital landscape – you dominate it. Discover the best language for web development with us as
+          <p class="main_p" id="h-heain-para">At Maximise Insights, our services are meticulously crafted to guarantee you don't just exist in the digital landscape – you dominate it. Discover the best language for web development with us as
             your trusted front-end, Back-end, full-stack web development company.</p>
           <button class="Learn_more le_m" id="h-heain-para"> <a class="btn-a" href="about.php">Learn more!</a></button>
           <!-- <br><br>
@@ -74,8 +73,7 @@ include 'includes/header.php';
       <div class="head" data-aos="fade-up" data-aos-delay="50">
         <!-- <br> -->
         <h1 class="text-center h1-test">Our Services</h1>
-        <p class="para ">With a proven history of launching over 400 websites into the digital sphere, we bring a
-          simplicity-first approach to every development project. </p>
+        <p class="para ">With a proven history of launching over 400 websites into the digital sphere, we bring a simplicity-first approach to every development project. </p>
       </div>
     </div>
     <div class="container our-service-sec">

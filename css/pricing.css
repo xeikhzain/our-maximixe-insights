@@ -830,7 +830,7 @@ text-decoration: none;
 }
 
 .para{
-  padding: 0 0 2rem 0;
+  padding: 0 !important;
   text-align: center;
   color:black ;
   font-weight: 400;
@@ -842,6 +842,9 @@ text-decoration: none;
 @media (max-width: 450px) {
   .table-pri {
   font-size: 30px;
+}
+.nav-item.dropdown .dropdown-menu {
+  width: 80% !important;
 }
 }
 @media (max-width: 600px) {

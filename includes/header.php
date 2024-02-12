@@ -1,5 +1,5 @@
 <?php
- session_start();
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximize Insights</title>
-    <!-- OwlCarouse -->
+    <!-- OwlCarousel -->
     <!-- BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-    <!-- OwlCarouse -->
-    <!-- css link -->
+    <!-- OwlCarousel -->
+    <!-- CSS links -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/industries.css">
     <link rel="stylesheet" href="./css/pricing.css">
-    <!-- css link -->
+    <!-- CSS links -->
     <!-- Icons Link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -34,29 +34,74 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,900&display=swap"
         rel="stylesheet">
     <!-- Fonts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #ff9600;
+        }
+    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        function removeActiveClass() {
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+        }
+
+        function setCurrentLink(link) {
+            removeActiveClass();
+            currentLink = link;
+            localStorage.setItem('currentLink', link);
+            document.querySelector('a[data-link="' + link + '"]').classList.add('active');
+        }
+
+        var currentLink = localStorage.getItem('currentLink') || 'home';
+        setCurrentLink(currentLink);
+
+        function refreshPage() {
+            location.reload();
+        }
+
+       
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                setCurrentLink(link.getAttribute('data-link'));
+            });
+        });
+
+        
+        var servicesDropdownLinks = document.querySelectorAll('.dropdown-menu .dropdown-item');
+
+        servicesDropdownLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                setCurrentLink('services'); 
+            });
+        });
+    });
+</script>
+
+
 </head>
 
 <body>
+    <?php
+        if(isset($_SESSION['status'])){
+    ?>
+    <div id="modalAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Hey!</strong> <?php echo $_SESSION['status'] ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php
+        unset($_SESSION['status']);
+        }
+    ?>
     
-     <?php
-                    if(isset($_SESSION['status'])){
-                        ?>
-                            <div id="modalAlert" class="alert alert-success alert-dismissible fade show" role="alert">
-                                <strong>Hey!</strong> <?php echo $_SESSION['status'] ?>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        <?php
-                        unset($_SESSION['status']);
-                    }
-                    ?>
-                    
-                    
     <nav class="navbar navbar-expand-lg p-0 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" onclick="refreshPage()"><img src="./assets/logo-removebg-preview (1).png" class="logo" alt=""></a>
@@ -70,13 +115,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="index.php" onclick="setCurrentLink('home')" data-link="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
+                        <a class="nav-link" href="about.php" onclick="setCurrentLink('about')" data-link="about">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" id="close" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="close" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Services
                         </a>
@@ -87,24 +132,14 @@
                             <li><a class="dropdown-item" href="services.php">Search Engine Optimization</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="industries.php">Industries</a>
-                    </li>
-
-                    <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Resources
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="hoverableDropdown">
-              <li><a class="dropdown-item" href="#">Blogs</a></li>
-              <li><a class="dropdown-item" href="#">News</a></li>
-            </ul>
-          </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.php">Pricing</a>
+                        <a class="nav-link" href="industries.php" onclick="setCurrentLink('industries')" data-link="industries">Industries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact Us</a>
+                        <a class="nav-link" href="pricing.php" onclick="setCurrentLink('pricing')" data-link="pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.php" onclick="setCurrentLink('contactus')" data-link="contactus">Contact Us</a>
                     </li>
                 </ul>
                 <a href="" class="con me-2"><i class="fa fa-phone"></i> +44 (7547) 754836</a>
@@ -129,8 +164,10 @@
                         </span>
                     </a>
                 </div>
-                </form>
             </div>
         </div>
     </nav>
     <!-- Nav bar -->
+</body>
+
+</html>

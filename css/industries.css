@@ -515,7 +515,7 @@ display: none;
 @media (min-width: 992px){
 .col-lg-6 {
   flex: 0 0 auto;
-  width: 468px;
+  /* width: 468px; */
 }
 .col-lg-2 {
 flex: 0 0 auto;
