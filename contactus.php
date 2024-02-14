@@ -2,10 +2,9 @@
 <?php
 include 'includes/header.php';
 ?>
-
-    <video id="home-video" autoplay muted loop>
-        <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
-    </video>
+<video id="home-video" style="position: fixed;" autoplay muted loop>
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
+</video>
     <!-- icons -->
     <div class="fixed-icons">
         <a href="#" title="Chat"><i class="fa fa-comments"></i></a>
@@ -80,14 +79,16 @@ include 'includes/header.php';
                         <input class="input" type="tel" id="phone" placeholder="" name="phone" oninput="validateNumericInput(this)" maxlength="15" required>
                     </label>
                         <select name="services" id="" class="input service my-2">
-                            <option value="">Select Services</option>
+                            <option value="">Select Service</option>
                             <option value="Website Development">Website Development</option>
-                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Digital Marketing">Social Media Marketing</option>
                             <option value="Graphic Designing">Graphic Designing</option>
-                            <option value="Software Solutions">Software Solutions</option>
+                            <option value="Software Solutions">Search Engine Optimization</option>
+                            <option value="Software Solutions">Content Writting</option>
+                            <option value="Software Solutions">Video Editing</option>
                         </select>
                         <label>
-                        <textarea class="input" type="text" placeholder="" rows="4" name="message" id="restrictedInput" oninput="validateInput(this)" maxlength="30" required=""></textarea>
+                        <textarea class="input" type="text" placeholder="" rows="1" name="message" id="restrictedInput" oninput="validateInput(this)" maxlength="1000" required=""></textarea>
                         <span>Message</span>
                     </label>
                         <button type="submit" name="contactBtn" class="submit">Submit</button>
@@ -99,7 +100,5 @@ include 'includes/header.php';
     </div>
 
    <?php
-   
    include 'includes/footer.php';
-   
    ?>

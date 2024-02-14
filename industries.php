@@ -1,9 +1,9 @@
 <?php
 include 'includes/header.php';
 ?>
-    <video id="home-video" style="position: fixed;" autoplay muted loop>
-      <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
-    </video>
+<video id="home-video" style="position: fixed;" autoplay muted loop>
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
+</video>
   <!-- icons -->
   <div class="fixed-icons">
     <a href="#" title="Chat"><i class="fa fa-comments"></i></a>
@@ -30,11 +30,11 @@ include 'includes/header.php';
           <button id="education-btn"  class="button btn-txt tab active shadow" onclick="openTab('education')" >Education </button>
           <button id="finance-btn"    class="button btn-txt tab  shadow" onclick="openTab('finance')" >Finance </button>
           <button id="transport-btn"  class="button btn-txt tab  shadow" onclick="openTab('transport')" >Logistics and Distribution </button>
-          <button id="realestate-btn" class="button btn-txt tab  shadow" onclick="openTab('realestate')" >Realestate </button>
+          <button id="realestate-btn" class="button btn-txt tab  shadow" onclick="openTab('realestate')" >Real and Estate & Property Development</button>
           <button id="healthcare-btn" class="button btn-txt tab  shadow" onclick="openTab('healthcare')" >Healthcare </button>
           <button id="technology-btn" class="button btn-txt tab  shadow" onclick="openTab('technology')" >Travel and Hospitality </button>
           <button id="telecom-btn"    class="button btn-txt tab  shadow" onclick="openTab('telecom')" >Telecom </button>
-          <button id="retail-btn"     class="button btn-txt tab  shadow" onclick="openTab('retail')" >Retail </button>
+          <button id="retail-btn"     class="button btn-txt tab  shadow" onclick="openTab('retail')" >Retail & Ecommerce </button>
         
         </div>
       </div>
@@ -53,11 +53,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img style="width:150px; height:auto;" src="./assets/Industry Icons_Education.webp" alt="">
+          <img src="./assets/education-academy-certification-curriculum-icon.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -89,11 +89,10 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/revenue-operations-concept.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -119,11 +118,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/aerial-view-cargo-ship-cargo-container-harbor.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -149,11 +148,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="text-primary">What We Do?</h3><br>
@@ -179,11 +178,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/team-young-specialist-doctors-standing-corridor-hospital.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -210,11 +209,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/top-view-travel-elements-collection.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -237,19 +236,28 @@ include 'includes/header.php';
 <div class="col-lg-9 indus-height" id="telecom">
   <div class="row">
     <div class="col-lg-7">
-      <h1 class="industries-heading">Telecom</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat tempora maiores animi consectetur. Iusto accusantium, unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!!unde ab cumque ut itaque voluptas deleniti earum fuga, eum aut. Corporis, deserunt excepturi!</p>
+      <h1 class="industries-heading">Telecommunications</h1>
+      <p>In the world of telecommunications, Maximise Insights is your go-to partner for essential services that make a real difference. We focus on enhancing connectivity, ensuring that your communications flow seamlessly. We understand the importance of a strong foundation. That's why our services prioritize the reliability of your telecommunications services through scalable and resilient network infrastructure. </p>
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/futuristic-smart-city-with-5g-global-network-technology.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3>
+  <h4>User-Friendly Communication Platforms</h4>
+  <p>We design platforms that seamlessly adapt to the unique demands of telecommunications, ensuring simplicity in user interactions for enhanced accessibility.</p><br>
+  <h4>Cutting-Edge Communication Apps</h4>
+  <p>Elevate real-time connectivity with our advanced applications, covering everything from VoIP solutions to intuitive messaging platforms.</p><br>
+  <h4>Reliable Network Infrastructure</h4>
+  <p>Our focus is on building strong and scalable network infrastructures, the backbone of dependable telecommunications services, guaranteeing optimal performance.</p><br>
+  <h4>Secure Data Practices</h4>
+  <p>Security is paramount in telecommunications. Our solutions implement industry-leading measures to protect sensitive data, guaranteeing compliance with regulatory standards.</p><br>
+ </p>
  </p>
 </div>
 </div>
@@ -264,11 +272,11 @@ include 'includes/header.php';
     </div>
     <div class="col-lg-5">
         <div class="indus-img">
-          <img src="./assets/work-1.png" alt="">
+          <img src="./assets/beautiful-family-standing-cash-counter.jpg" alt="">
     </div>
   </div>
 </div>
- <hr>
+ 
  <div class="content">
  <p>
   <h3 class="industries-heading">What We Do?</h3><br>
@@ -280,7 +288,6 @@ include 'includes/header.php';
   <p>Streamline operations with efficient inventory management. We implement systems that provide real-time updates, preventing overselling, and ensuring your retail store remains well-stocked and ready to meet customer demands.</p><br>
   <h4>User Behavior Analytics</h4>
   <p>Understand your customers better with analytics tools. Gain insights into user behavior, preferences, and trends, enabling data-driven decisions for your retail strategy. Through these services, Maximise Insights aims to not only meet but exceed the expectations of the modern retail consumer.</p><br>
-  <h4></h4>
  </p>
 </div>
 </div>

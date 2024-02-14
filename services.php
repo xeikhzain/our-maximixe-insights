@@ -1,14 +1,12 @@
 <?php
 include 'includes/header.php';
 ?>
-  
-  <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
-  </video>
+ <video id="home-video" style="position: fixed;" autoplay muted loop>
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
+</video>
   <!-- Front  -->
   <div class="ser-head">
   <h1>SEARCH ENGINE OPTIMIZATION</h1>
-  <h5>Boost Your Online Visibility with SEO</h5>
   </div>
   <div class="container text-center">
     <div class="row">
@@ -18,7 +16,7 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12" id="ser-img-id">
-        <div class="ser-img-4"><img  class=" text-center" src="./assets/Typing-bro.png" alt=""></div>
+        <div class="ser-img-4"><img  class=" text-center" src="./assets/SEO analytics team-rafiki.png" alt=""></div>
       </div>
     </div>
   </div>
@@ -27,7 +25,7 @@ include 'includes/header.php';
       <div class="col-lg-5 col-md-12 col-sm-12">
         <div class="development">
           <h1 style="text-align: center;"><b>Keyword Research and Analysis</b></h1>
-          <img src="./assets/Online world-amico.svg" alt="" class="img-fluid text-center">
+          <img src="./assets/Google sitemap-amico.png" alt="" class="img-fluid text-center">
         </div>
       </div>
       <div class="col-lg-7 col-md-12 col-sm-12 main-div-development">

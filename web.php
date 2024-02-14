@@ -2,7 +2,7 @@
 include 'includes/header.php';
 ?>
 <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
 </video>
 <!-- Front  -->
 <div class="ser-head">
@@ -31,7 +31,7 @@ include 'includes/header.php';
         <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="development">
                 <h1 style="text-align: center;"><b>Ecommerce Website Development</b></h1>
-                <img src="./assets/Online world-amico.svg" alt="" class="img-fluid text-center">
+                <img src="./assets/Static assets-rafiki.png" alt="" class="img-fluid text-center">
             </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 main-div-development">

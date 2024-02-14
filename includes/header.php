@@ -130,6 +130,8 @@
                             <li><a class="dropdown-item" href="seo.php">Social Media Marketing</a></li>
                             <li><a class="dropdown-item" href="design.php">Graphic Designing</a></li>
                             <li><a class="dropdown-item" href="services.php">Search Engine Optimization</a></li>
+                            <li><a class="dropdown-item" href="content-writing.php">Content Writing</a></li>
+                            <li><a class="dropdown-item" href="video-editing.php">Video Editing</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -167,6 +169,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Nav bar -->
 </body>
 

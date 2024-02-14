@@ -562,23 +562,16 @@ nav {
 /* foooter */
 
 .foot-text1 {
-  color: white;
+  color: #002966;
   font-weight: normal;
   transition: 0.1s ease;
 }
 
 .foot-text {
-  color: white;
+  color: #002966;
 }
 
-.footers {
-  background: rgb(0,41,102);
-  background: linear-gradient(117deg, rgba(0,41,102,1) 30%, rgba(43,188,239,1) 100%);
-    height: auto;
-    padding: 2% 1px 6px 5px;
-    position: relative;
-    padding-bottom: 10px;
-}
+
 
 .dropdown {
   color: aliceblue;
@@ -597,13 +590,13 @@ nav {
 }
 
 #icon {
-  color: aliceblue;
+  color: #002966;
   margin: 1%;
   font-size: 20px;
 }
 
 .fa-brands {
-  color: aliceblue;
+  color: #002966;
   margin: 1%;
   font-size: 30px;transition: 0.5s ease;
 }
@@ -623,7 +616,7 @@ nav {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
+  color: #002966;
 }
 
 .hover-underline-animation:after {
@@ -684,4 +677,9 @@ background: #505659;
 
 .contactMap iframe {
       width: 100%;
+  }
+  @media screen and (max-width : 767px) {
+    .form-details{
+      order: -1;
+    }
   }

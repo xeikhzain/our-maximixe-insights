@@ -258,11 +258,6 @@ nav {
     padding-right: 5px;
   }
 
-  .btn-content {
-    font-size: 10px;
-    padding: 0px 10px;
-  }
-
 }
 
 .logo {
@@ -309,7 +304,6 @@ nav {
   justify-content: center;
   display: flex;
   height: 450px;
-  margin-top: 15%;
   width: auto;
   transition: all ease;
 }
@@ -700,6 +694,16 @@ nav {
 .Learn_more2 {
   margin-left: 25px;
 }
+@media screen and (min-width : 1247px) and (max-width : 15000px) {
+  .btn-title{
+font-size: 15px;
+  } 
+}
+@media screen and (min-width : 992px) and (max-width : 1246px ) {
+  .btn-title{
+    font-size: 10px !important;
+   } 
+}
 
 .Learn_more2::before {
   content: "";
@@ -946,12 +950,7 @@ nav {
   margin: 0 40px;
   transition: 0.5s ease;
 }
-
-
-
 /* tech-stack */
-
-
 /* Services */
 *,
 *::after,
@@ -965,10 +964,7 @@ nav {
 
 :root {
   --container: 100rem;
-  --primary: hsl(201.43, 13.21%, 58.43%);
   --white: hsl(0, 0%, 100%);
-  --white-light: hsl(0, 0%, 99%);
-  --box-shadow: hsl(220, 7.32%, 91.96%);
 }
 
 .container {
@@ -1050,7 +1046,7 @@ header {
   align-items: center;
   gap: .5rem;
   color: #002966;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .filter-btn.actives {
@@ -1273,15 +1269,18 @@ header {
 }
 
 .footers {
-  background: rgb(0, 41, 102);
-  background: linear-gradient(117deg,
-      rgba(0, 41, 102, 1) 30%,
-      rgba(43, 188, 239, 1) 100%);
+  backdrop-filter: blur(2px);
+  background: linear-gradient(145deg, #f0f0f088, #f0f0f028);
+  box-shadow: 2px 5px 10px rgba(128, 128, 128, 0.527);;
   height: auto;
   padding: 2% 1px 6px 5px;
   position: relative;
   padding-bottom: 10px;
 }
+/* background: rgb(0, 41, 102);
+  background: linear-gradient(117deg,
+      rgba(0, 41, 102, 1) 30%,
+      rgba(43, 188, 239, 1) 100%); */
 
 .copy-right span {
   font-weight: 600;
@@ -1299,15 +1298,18 @@ header {
 }
 
 #icon {
-  color: aliceblue;
+  color: #002966;
   margin: 1%;
   font-size: 20px;
 }
 
 .footers h2 {
   font-size: 20px;
+  color: #ff9600;
 }
-
+.footers i{
+color: #4d4d4d;
+}
 .footers p {
   font-size: 15px;
   font-weight: 300;
@@ -1318,12 +1320,11 @@ header {
 }
 
 .fa-brands {
-  color: aliceblue;
+  color: #002966;
   margin: 1%;
   font-size: 20px;
 }
 
-.fa-brands:hover {}
 
 .foot-text1::after {
   content: "";
@@ -1342,7 +1343,7 @@ header {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
+  color: #002966;
 }
 
 .hover-underline-animation:after {
@@ -1382,6 +1383,12 @@ header {
   background-color: orange;
   color: white;
 }
+@media screen and (max-width : 15000px) {
+  .privacy-page{
+    margin-top: 7rem !important;
+    margin-bottom: 7rem !important;
+  } 
+}
 
 @media (max-width: 400px) {
   .socials {
@@ -1400,6 +1407,9 @@ header {
 
   .tab-filter-item-container {
     height: 470px !important;
+  }
+  .seo-img{
+    margin: 0 auto;
   }
 
   .logos {
@@ -1746,7 +1756,11 @@ width: 180px !important;
   }
 }
 
-
+@media screen and (max-width : 550px) {
+  .para{
+    width: 100% !important;
+  }
+}
 
 @media screen and (max-width : 850px) {
   .main_h {
@@ -1756,6 +1770,7 @@ width: 180px !important;
   .cards {
     width: 140px !important;
     height: 110px !important;
+    border-radius: 10px;
   }
 
   .cards img {
@@ -1835,9 +1850,6 @@ width: 180px !important;
     font-size: 13px;
   }
 
-  .container {
-    margin: 0 auto 40px 0 !important;
-  }
 
   .main_h {
     font-size: 40px !important;
@@ -1901,10 +1913,6 @@ width: 180px !important;
   .h-first-img {
     max-width: 100%;
     width: 60%;
-  }
-
-  .tab-img {
-    width: 90% !important;
   }
 
   .cards {
@@ -2119,4 +2127,9 @@ width: 180px !important;
 #navbarSupportedContent ul li { 
   margin-right: auto !important;
 
+}
+@media screen and (max-width : 380px) {
+  .tab-img{
+    margin-left : -3rem; 
+  }
 }

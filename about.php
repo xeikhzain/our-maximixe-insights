@@ -2,8 +2,8 @@
 include 'includes/header.php';
 ?>
   <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
-  </video>
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
+</video>
     <!-- Nav bar -->
 
       <!-- About -->
@@ -21,32 +21,30 @@ include 'includes/header.php';
           <div class="mission_sec">
             <div class="mission_sec-content">
               <h3 style="font-weight:400; font-size:20px;">Where Did It Begin?</h3>
-              <p style="text-align; margin:0px;">
+              <p style=" margin:0px;">
                 Our story is a tale of ambition, late-night coding sessions,  
                 and the joy of seeing brands thrive in the digital space. 
                 It all started with a simple idea to make digital experiences 
                 not just functional but extraordinary. From a small team of  enthusiasts, we have grown into a family, driven by the belief 
                 that every project is a chance to create something remarkable.
-
               </p>
             </div>
             <div class="fr-img">
-              <img src="./assets/Mobile development-amico.png" alt="" />
+              <img src="./assets/Personal data-pana.png" alt="" />
             </div>
           </div>
           <div class="mission_sec mission_vission">
             <div class="fr-img">
-              <img src="./assets/Mobile development-amico.png" alt="" />
+              <img src="./assets/Business growth-rafiki.png" alt="" />
             </div>
             <div class="mission_sec-content">
               <h3 style="font-weight:400; font-size:20px;">Why Choose Us?</h3>
-              <p style="text-align; margin:0px;">
+              <p style="margin:0px;">
                 What sets us apart is not just what we do but how we do it. 
                 Your success fuels our journey, and each success story becomes 
                  a chapter in our book of growth. So, welcome to our story, 
                   where your brand is the hero, and we are the sidekick making 
                    sure it shines.
-                .
               </p>
             </div>
           </div>

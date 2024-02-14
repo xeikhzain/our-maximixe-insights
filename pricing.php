@@ -1,14 +1,8 @@
 <?php
 include 'includes/header.php';
 ?>
-<video id="home-video" autoplay muted loop>
-    <source src="./assets/Home Page Animation.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-
 <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
 </video>
 <br><br><br>
 <section class="pricing-section ">
@@ -1083,6 +1077,9 @@ const openTab = (tabName) => {
     }
 };
 </script>
+
+
+
 
 
 <?php

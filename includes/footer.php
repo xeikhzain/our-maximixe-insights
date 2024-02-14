@@ -25,16 +25,11 @@
             <div class="col-lg-3 col-md-12">
                 <h2 class="hover-underline-animation">More Services</h2>
                 <br><br>
-
-                <a href="">
-                    <p class="hover-underline-animation">Website Maintenance</p>
-                </a>
-                <br>
-                <a href="">
+                <a href="video-editing.php">
                     <p class="hover-underline-animation">Video Editing</p>
                 </a>
                 <br>
-                <a href="">
+                <a href="content-writing.php">
                     <p class="hover-underline-animation">Content Writing</p>
                 </a>
             </div>
@@ -47,22 +42,22 @@
                 <a href="./index.php#testimonial_area">
                     <p class="hover-underline-animation">Testimonials</p><br>
                 </a>
-                <a href="#">
+                <a href="./privacy-policy.php">
                     <p class="hover-underline-animation">Privacy Policy</p><br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-12">
                 <h2 class="hover-underline-animation"> Get in Touch!</h2>
                 <br><br>
-                <p class="hover-underline-animation"><i class="fa fa-phone"></i> Landline: <br> +44 (7547) 754836
+                <p class="hover-underline-animation"><i class="fa fa-phone"></i> <b> Landline:</b> <br> +44 (7547) 754836
                 </p><br>
-                <p class="hover-underline-animation"><i class="fas fa-envelope"></i> Email:
+                <p class="hover-underline-animation"><i class="fas fa-envelope"></i> <b>Email:</b>
                     <br>maximizeinsights@gmail.com
                 </p>
                 <br>
                 <p class="hover-underline-animation">
                     <i class="fas fa-map-marker-alt"></i>
-                    Address: <br> 44 Drake Avenue, Teignmouth, Devon, United Kingdom, TQ14 9NA
+                    <b>Address:</b> <br> 44 Drake Avenue, Teignmouth, Devon, United Kingdom, TQ14 9NA
                 </p>
                 <br>
                 <p class="hover-underline-animation"></p>
@@ -207,7 +202,7 @@ $("#phonee").prop('value', '+1 ');
 </script>
 
 
-<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
@@ -222,7 +217,7 @@ $("#phonee").prop('value', '+1 ');
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!--  -->
-<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 
 <script src="index.js"></script>
 

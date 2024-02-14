@@ -2,7 +2,7 @@
 include 'includes/header.php';
 ?>
 <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
 </video>
   <!-- Front  -->
   <div class="ser-head">
@@ -16,7 +16,7 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12" id="ser-img-id">
-        <div class="ser-img-3"><img  class=" text-center" src="./assets/UI-UX differences-amico.png" alt=""></div>
+        <div class="ser-img-3"><img  class=" text-center" src="./assets/Designer life-bro.png" alt=""></div>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ include 'includes/header.php';
       <div class="col-lg-5 col-md-12 col-sm-12">
         <div class="development">
           <h1 style="text-align: center;"><b>Showcase Your Brand</b></h1>
-          <img src="./assets/Online world-amico.svg" alt="" class="img-fluid text-center">
+          <img src="./assets/Font-amico.png" alt="" class="img-fluid text-center">
         </div>
       </div>
       <div class="col-lg-7 col-md-12 col-sm-12 main-div-development">

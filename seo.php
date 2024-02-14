@@ -3,7 +3,7 @@ include 'includes/header.php';
 ?>
 
 <video id="home-video" style="position: fixed;" autoplay muted loop>
-    <source src="./assets/Home Page Bg No Arrow.webm" type="video/mp4">
+    <source src="./assets/Home Page Animation.webm" type="video/mp4">
 </video>
 
 <div class="ser-head">
@@ -21,7 +21,7 @@ include 'includes/header.php';
             </div>
         </div>
         <div class="col-lg-5 col-md-6 col-sm-12" id="ser-img-id">
-            <div class="ser-img-2"><img class=" text-center" src="assets/Marketing-amico.png" alt=""></div>
+            <div class="ser-img-2"><img class=" text-center" src="assets/Social media-bro.png" alt=""></div>
         </div>
     </div>
 </div>
@@ -30,7 +30,7 @@ include 'includes/header.php';
         <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="development ">
                 <h1 style="text-align: center;"><b>All-in-One Social Media Marketing to Boost Marketing Efforts</b></h1>
-                <img src="./assets/Online world-amico.svg" alt="" class="img-fluid text-center">
+                <img src="./assets/Social tree-amico.png" alt="" class="img-fluid text-center">
             </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 main-div-development">

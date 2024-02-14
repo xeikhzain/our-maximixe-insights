@@ -12,7 +12,7 @@
   }
 
   .about-us-heading {
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
 
   .sec_headin {
@@ -64,7 +64,7 @@
 
   .mission_sec h3 {
     color: #002966;
-    font-size: 40px !important;
+    font-size: 30px !important;
     margin-bottom: 20px;
     font-weight: 800 !important;
   }
@@ -188,7 +188,6 @@
 
     .box {
       display: flex;
-      padding: 0;
     }
 
     .box-sec-tow {
@@ -316,26 +315,19 @@
   /* foooter */
 
   .foot-text1 {
-    color: white;
+    color: #002966;
     font-weight: normal;
     transition: 0.1s ease;
   }
 
   .foot-text {
-    color: white;
+    color: #002966;
   }
 
-  .footers {
-    background: rgb(0, 41, 102);
-    background: linear-gradient(117deg, rgba(0, 41, 102, 1) 30%, rgba(43, 188, 239, 1) 100%);
-    height: auto;
-    padding: 2% 1px 6px 5px;
-    position: relative;
-    padding-bottom: 10px;
-  }
+  
 
   .dropdown {
-    color: aliceblue;
+    color: #002966;
   }
 
   .fa-brands:hover {
@@ -351,13 +343,13 @@
   }
 
   #icon {
-    color: aliceblue;
+    color: #002966;
     margin: 1%;
     font-size: 20px;
   }
 
   .fa-brands {
-    color: aliceblue;
+    color: #002966;
     margin: 1%;
     font-size: 30px;
     transition: 0.5s ease;
@@ -380,7 +372,7 @@
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: white;
+    color: #002966;
   }
 
   .hover-underline-animation:after {
