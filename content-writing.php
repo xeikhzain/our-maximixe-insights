@@ -57,10 +57,10 @@ include 'includes/header.php';
             </div>
             <div class="dev-1 mb-3">
                 <div class="dev-h text-center">
-                    <h3>Performance Tracking and Optimization</h3>
+                    <h3>Professional Ebook Writing</h3>
                 </div>
                 <div class="devp">
-                    <p>Utilizing advanced analytics tools, we track and analyze key metrics such as engagement, traffic sources, and conversion rates. This allows us to gain valuable insights into how your content is performing and identify areas for improvement.</p>
+                    <p>We start by understanding your audience's needs and defining clear objectives for the project. Thorough research and detailed outlines guide the writing process, ensuring that the content addresses audience interests successfully.</p>
                 </div>
             </div>
         </div>

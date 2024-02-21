@@ -95,7 +95,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn">Order Now</button>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
 
 
 
@@ -193,7 +193,7 @@ include 'includes/header.php';
                         </li>
                         <li>
                             <i class="fa-solid fa-check"></i>
-                            1-12 Unique Pages Website                            
+                            1-12 Unique Pages Website
                         </li>
                         <li>
                             <i class="fa-solid fa-check"></i>
@@ -875,11 +875,11 @@ include 'includes/header.php';
                 </div>
                 <div class="bg-price">
                     <h2 class="pt-2 text-center">$249.00</h2>
-                    
+
                 </div>
                 <div class="padd">
                     <ul class="second-ul">
-                    <li>
+                        <li>
                             <i class="fa-solid fa-check"></i> Posts 20
                         </li>
                         <li>
@@ -959,11 +959,11 @@ include 'includes/header.php';
                 </div>
                 <div class="bg-price-3">
                     <h2 style="text-align: right;" class="pt-2 ">$349.00</h2>
-                    
+
                 </div>
                 <div class="padd">
                     <ul class="third-ul">
-                    <li>
+                        <li>
                             <i class="fa-solid fa-check"></i> Posts 30
                         </li>
                         <li>
@@ -1041,13 +1041,56 @@ include 'includes/header.php';
     </div>
 </section>
 </div>
-
-
-
-
-
 </div>
 <br><br>
+
+<!-- Modal -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="container">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="form-container">
+                    <form class="form">
+                    <div class="form-group">
+                            <label for="email">Your Good Name</label>
+                            <input type="text" id="text" name="name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Company Email</label>
+                            <input type="text" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">Your Requirements</label>
+                            <textarea name="textarea" id="textarea" rows="10" cols="50"
+                                required="">          </textarea>
+                        </div>
+                        <button class="form-submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
 <!-- icons -->
 <script>
 const openTab = (tabName) => {
