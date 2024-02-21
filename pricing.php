@@ -1,5 +1,6 @@
 <?php
-include 'includes/header.php';
+    include 'includes/header.php';
+    
 ?>
 <video id="home-video" style="position: fixed;" autoplay muted loop>
     <source src="./assets/Home Page Animation.webm" type="video/mp4">
@@ -95,7 +96,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    <button class="btn order_btn" id="wd_1"  data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
 
 
 
@@ -169,7 +170,7 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" id="wd_2" data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
                 </div>
             </div>
             <!-- -----card-3--- -->
@@ -248,7 +249,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" id="wd_3">Order Now</button>
 
 
 
@@ -370,7 +371,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" id="seo_1">Order Now</button>
 
 
 
@@ -502,7 +503,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" id="seo_2">Order Now</button>
 
 
 
@@ -641,11 +642,11 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" id="seo_3">Order Now</button>
                 </div>
             </div>
         </div>
-        <!-- ---Digital marketing--- -->
+        <!-- ---Graphic Designing--- -->
         <div class="tab-content PricingCard" id="e-store">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
@@ -683,7 +684,7 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" id="gd_1">Order Now</button>
                 </div>
             </div>
 
@@ -729,7 +730,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" id="gd_2">Order Now</button>
 
 
 
@@ -775,7 +776,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" id="gd_3">Order Now</button>
 
 
 
@@ -859,7 +860,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" id="sm_1">Order Now</button>
 
 
 
@@ -943,7 +944,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" id="sm_2">Order Now</button>
 
 
 
@@ -1027,7 +1028,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" id="sm_3">Order Now</button>
 
 
 
@@ -1049,11 +1050,12 @@ include 'includes/header.php';
 
 
 <!-- Modal -->
-<div class="container">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="container">
+    <div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h2>web development order</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="form-container">
@@ -1077,10 +1079,44 @@ include 'includes/header.php';
             </div>
         </div>
     </div>
+</div> -->
+<div class="container">
+    <div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="form-container">
+                    <h2 class="modal-heading" style="color: #414141 !important;"></h2>
+                    <form class="form">
+                    <div class="form-group">
+                            <label for="name">Your Good Name</label>
+                            <input type="text" id="user_name" name="name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="text" id="user_email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Your Address</label>
+                            <input type="text" id="user_address" name="address" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="user_message" rows="10" cols="50"
+                                required="">   </textarea>
+                        </div>
+                        <!-- <button class="form-submit-btn" id="user_submit" type="submit">Submit</button> -->
+                    </form>
+                    <button id="user_submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Modal -->
-
+<!-- /Modal -->
 
 
 
@@ -1092,36 +1128,66 @@ include 'includes/header.php';
 
 
 <!-- icons -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-const openTab = (tabName) => {
-    const tabs = ["design", "shopify", "e-store", "branding", "animation", "seo"];
+    // $(document).ready(function(){
+        // alert("k");
+        // $(".order_btn").click(function(){
+        //     var orderId = $(this).attr('id');
+        //     alert('Check'+orderId);
+        //     var dataToSend = {
+        //         orderId: orderId
+        //     };
 
-    tabs.forEach((tab) => {
-        const tabButton = document.getElementById(`${tab}-btn`);
-        if (tabButton) {
-            tabButton.classList.remove("active");
-        }
-        const element = document.getElementById(tab);
-        if (element) {
-            if (tab === tabName) {
-                element.style.display = "flex";
-                element.classList.add("flip-right");
-            } else {
-                element.style.display = "none";
-                element.classList.remove("flip-right");
+        //     alert(check."okkkkk");
+
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "process.php",
+        //         data: dataToSend,
+        //         success: function(response){
+        //             console.log(response);
+        //         }
+        //     });
+        // });
+        
+        
+        
+    const openTab = (tabName) => {
+        const tabs = ["design", "shopify", "e-store", "branding", "animation", "seo"];
+
+        tabs.forEach((tab) => {
+            const tabButton = document.getElementById(`${tab}-btn`);
+            if (tabButton) {
+                tabButton.classList.remove("active");
             }
+            const element = document.getElementById(tab);
+            if (element) {
+                if (tab === tabName) {
+                    element.style.display = "flex";
+                    element.classList.add("flip-right");
+                } else {
+                    element.style.display = "none";
+                    element.classList.remove("flip-right");
+                }
+            }
+        });
+
+        // Add the 'active' class to the clicked button
+        const clickedTabButton = document.getElementById(`${tabName}-btn`);
+        if (clickedTabButton) {
+            clickedTabButton.classList.add("active");
         }
-    });
+    };
+// });
 
-    // Add the 'active' class to the clicked button
-    const clickedTabButton = document.getElementById(`${tabName}-btn`);
-    if (clickedTabButton) {
-        clickedTabButton.classList.add("active");
-    }
-};
+
+
+        
+
+
 </script>
-
-
 
 
 

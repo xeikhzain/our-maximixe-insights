@@ -202,7 +202,7 @@ $("#phonee").prop('value', '+1 ');
 </script>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
@@ -237,6 +237,7 @@ $(document).ready(function() {
         myAlert.fadeOut('slow');
     }, 5000);
 });
+
 </script>
 
 <script>
@@ -244,7 +245,54 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (link.href === window.location.href) {
         link.setAttribute('aria-current', 'page')
     }
-})
+});
+
+$(document).ready(function() {
+
+    var orderId;
+
+    $(".order_btn").click(function(){
+        var orderId = $(this).attr('id');
+
+        if (orderId == 'wd_1') {
+            $('.modal-heading').text('Web Development - Basic');
+        } else if (orderId == 'wd_2') {
+            $('.modal-heading').text('Web Development - Business');
+        } else (orderId == 'wd_3') {
+            $('.modal-heading').text('Web Development - Premium');
+        }
+
+    });
+    $("#user_submit").click(function () {
+
+        alert('hogaya');
+        var username = $("#user_name");
+        var useremail = $("#user_email");
+        var useraddress = $("#user_address");
+        var usermessage = $("#user_message");
+        
+        var dataToSend = {
+            orderId: 'wp_1',
+            name: username,
+            email: useremail,
+            address: useraddress,
+            message: usermessage
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "user-form.php",
+            data: dataToSend,
+            success: function(response){
+                console.log(response);
+            }
+        });
+
+    });
+    
+});
+
+
 </script>
 
 </body>
