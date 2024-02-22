@@ -97,7 +97,7 @@
                     <br>
 
 
-                    <button class="btn order_btn" id="wd_basic"  data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
 
 
 
@@ -171,7 +171,7 @@
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #002966;" class="btn order_btn" id="wd_business" data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn">Order Now</button>
                 </div>
             </div>
             <!-- -----card-3--- -->
@@ -250,7 +250,7 @@
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="wd_premium">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
 
 
 
@@ -372,7 +372,7 @@
                     <br>
 
 
-                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_basic">Order Now</button>
+                    <button class="btn">Order Now</button>
 
 
 
@@ -504,7 +504,7 @@
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_business">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn">Order Now</button>
 
 
 
@@ -643,12 +643,11 @@
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_premium">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
                 </div>
             </div>
         </div>
-
-        <!-- ---Graphic Designing--- -->
+        <!-- ---Digital marketing--- -->
         <div class="tab-content PricingCard" id="e-store">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
@@ -686,7 +685,7 @@
                         </li>
                     </ul>
                     <br>
-                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_basic">Order Now</button>
+                    <button class="btn">Order Now</button>
                 </div>
             </div>
 
@@ -732,7 +731,7 @@
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_business">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn">Order Now</button>
 
 
 
@@ -778,7 +777,7 @@
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_premium">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
 
 
 
@@ -861,7 +860,7 @@
                     <br>
 
 
-                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_basic">Order Now</button>
+                    <button class="btn">Order Now</button>
 
 
 
@@ -945,7 +944,7 @@
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_business">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn">Order Now</button>
 
 
 
@@ -1028,7 +1027,7 @@
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_premium">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
 
 
 
@@ -1076,66 +1075,13 @@
             </div>
         </div>
     </div>
-</div> -->
-<div class="container">
-    <div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="form-container">
-
-                    <div>
-                        <h2 class="modal-heading"></h2>
-                        <div class="p-3">
-                            <h4 style="" class="modal-package"></h4>
-                        </div>
-                        <div class="price-bg">
-                            <h2 class="modal-price"></h2>
-                        </div>
-                        <ul class="modal-orderlist"></ul>
-                    </div>
-                    
-                    <form class="form">
-                        <input type="hidden" name="" id="" class="inp-package">
-                        <input type="hidden" name="" id="" class="inp-price">
-                        <div class="form-group">
-                            <label for="name">Your Good Name</label>
-                            <input type="text" id="user_name" name="name" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="text" id="user_email" name="email" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Your Address</label>
-                            <input type="text" id="user_address" name="address" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea name="message" id="user_message" rows="10" cols="50" required=""></textarea>
-                        </div>
-                        <!-- <button class="form-submit-btn" id="user_submit" type="submit">Submit</button> -->
-                    </form>
-                    <button name="orderBtn" class="form-submit-btn modal-btn bg-warning w-100" id="user_submit">Order Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
-<!-- /Modal -->
+<!-- Modal -->
 
 
-<!-- Hidden pop-up container -->
-<div id="custom-popup" class="popup-container" style="display: none;">
-    <div class="popup-content">
-        <h3>Your order is submitted!</h3>
-        <p>Thank you for your order.</p>
-        <i class="fa-solid fa-check"></i>
-    </div>
-</div>
+
+
 
 
 
