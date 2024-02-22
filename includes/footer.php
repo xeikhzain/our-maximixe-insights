@@ -202,7 +202,7 @@ $("#phonee").prop('value', '+1 ');
 </script>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
@@ -237,6 +237,7 @@ $(document).ready(function() {
         myAlert.fadeOut('slow');
     }, 5000);
 });
+
 </script>
 
 <script>
@@ -244,7 +245,130 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (link.href === window.location.href) {
         link.setAttribute('aria-current', 'page')
     }
-})
+});
+
+$(document).ready(function() {
+    var orderId;
+
+    $(".order_btn").click(function(){
+        orderId = $(this).attr('id');
+        
+        // Get Set List
+        var ul = $("#"+orderId+"_list").html();
+        $('.modal-orderlist').html(ul);
+
+        // Get Set Price
+        var price = $("#"+orderId+"_price").text();
+        $('.modal-price').text(price);
+        $('.inp-price').val(price);
+        
+        // Get Set Package
+        var package = $("#"+orderId+"_package").text();
+        $('.modal-package').text(package);
+
+        // Set Titles
+        if (orderId == 'wd_basic' || orderId == 'wd_business' || orderId == 'wd_premium') {
+            $('.modal-heading').text('Web Development');
+            $('.inp-package').val('Web Development - '+package);
+        } else if (orderId == 'seo_basic' || orderId == 'seo_business' || orderId == 'seo_premium') {
+            $('.modal-heading').text('SEO - Search Engine Optimization');
+            $('.inp-package').val('SEO - Search Engine Optimization - '+package);
+        }else if (orderId == 'gd_basic' || orderId == 'gd_business' || orderId == 'gd_premium') {
+            $('.modal-heading').text('Graphic Designing');
+            $('.inp-package').val('Graphic Designing - '+package);
+        }else if (orderId == 'sm_basic' || orderId == 'sm_business' || orderId == 'sm_premium') {
+            $('.modal-heading').text('Social Media Marketing');
+            $('.inp-package').val('Social Media Marketing - '+package);
+        }
+
+        try {
+            var checkPackage = $('.modal-package').text().trim().toLowerCase();
+            
+            switch (checkPackage) {
+                case 'basic':
+                    $('.modal-package').css('color', '#2BBCEF');
+                    $('.price-bg').css('background-color', '#2BBCEF');
+                    break;
+                case 'business':
+                    $('.modal-package').css('color', '#002966');
+                    $('.price-bg').css('background-color', '#002966');
+                    break;
+                case 'premium':
+                    $('.modal-package').css('color', '#fca62d');
+                    $('.price-bg').css('background-color', '#fca62d');
+                    break;
+                default:
+                    console.log('Package not recognized:', checkPackage);
+                    break;
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+
+
+    });
+
+
+    // Show custom pop-up function
+    function showPopup() {
+        document.getElementById('custom-popup').style.display = 'block';
+    }
+
+    // Hide custom pop-up function
+    function hidePopup() {
+        document.getEleentById('custom-popup').style.display = 'none';
+    }
+
+    $("#user_submit").click(function () {
+        var username = $("#user_name").val();
+        var useremail = $("#user_email").val();
+        var useraddress = $("#user_address").val();
+        var usermessage = $("#user_message").val();
+        var orderpackage = $(".inp-package").val();
+        var orderprice = $(".inp-price").val();
+
+        var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if (!emailRegex.test(useremail)) {
+            onsole.log("Invalid email entered:", useremail);
+            alert("Please enter a valid email address.");
+            return;
+        }
+        
+        var dataToSend = {
+            orderId: orderId,
+            name: username,
+            email: useremail,
+            address: useraddress,
+            message: usermessage,
+            package: orderpackage,
+            price: orderprice
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "user-form.php",
+            data: dataToSend,
+            success: function(response) {
+                if (response.trim() === 'Email sent successfully!') {
+                    showPopup();
+                    setTimeout(function() {
+                        hidePopup();
+                        window.location.href = "pricing.php";
+                    }, 2000);
+                } else {
+                    console.log(response);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
+
+
+
 </script>
 
 </body>

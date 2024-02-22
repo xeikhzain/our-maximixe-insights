@@ -1,5 +1,6 @@
 <?php
-include 'includes/header.php';
+    include 'includes/header.php';
+    
 ?>
 <video id="home-video" style="position: fixed;" autoplay muted loop>
     <source src="./assets/Home Page Animation.webm" type="video/mp4">
@@ -40,19 +41,20 @@ include 'includes/header.php';
 
             </ul>
         </div>
+
         <!-- web design -->
         <div class="tab-content flip-right PricingCard" id="design">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
                 <div class="p-3">
-                    <h4 style="color: #2BBCEF;" class="pt-3">
+                    <h4 style="color: #2BBCEF;" class="pt-3" id="wd_basic_package">
                         BASIC</h4>
                 </div>
                 <div class="bg-successs">
-                    <h2 class="pt-2">$299 - $1299</h2>
+                    <h2 class="pt-2" id="wd_basic_price">$299 - $1299</h2>
                 </div>
                 <div class="padd">
-                    <ul class="first-ul">
+                    <ul class="first-ul" id="wd_basic_list">
                         <li>
                             <i class="fa-solid fa-check"></i>
                             Static Website
@@ -95,7 +97,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    <button class="btn order_btn" id="wd_basic"  data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
 
 
 
@@ -105,15 +107,15 @@ include 'includes/header.php';
             <!-- -----card-2--- -->
             <div class="card scroll-card-2">
                 <div class="p-3">
-                    <h4 style="color:  #002966;" class="text-center pt-3">
+                    <h4 style="color:  #002966;" class="text-center pt-3" id="wd_business_package">
                         BUSINESS</h4>
                 </div>
                 <div class="bg-price">
-                    <h2 class="pt-2 text-center">$499 - $1499</h2>
+                    <h2 class="pt-2 text-center" id="wd_business_price">$499 - $1499</h2>
                     <!-- <h3 class=" text-center"></h3> -->
                 </div>
                 <div class="padd">
-                    <ul class="second-ul">
+                    <ul class="second-ul" id="wd_business_list">
                         <li>
                             <i class="fa-solid fa-check"></i>Dynamic Website
                         </li>
@@ -169,21 +171,21 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" id="wd_business" data-bs-toggle="modal" data-bs-target="#order">Order Now</button>
                 </div>
             </div>
             <!-- -----card-3--- -->
             <div class="card scroll-card-3">
                 <div class="p-3">
-                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3">
+                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3" id="wd_premium_package">
                         PREMIUM</h4>
                 </div>
-                <div class="bg-price-3">
+                <div class="bg-price-3" id="wd_premium_price">
                     <h2 style="text-align: right;" class="pt-2 ">$699 - $1899</h2>
                     <!-- <h3 style="text-align: right;"></h3> -->
                 </div>
                 <div class="padd">
-                    <ul class="third-ul">
+                    <ul class="third-ul" id="wd_premium_list">
                         <li>
                             <i class="fa-solid fa-check"></i>Ecommerce Store
                         </li>
@@ -248,7 +250,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="wd_premium">Order Now</button>
 
 
 
@@ -256,20 +258,20 @@ include 'includes/header.php';
                 </div>
             </div>
         </div>
-        <!--e-store -->
+
+        <!--SEO -->
         <div class="tab-content PricingCard" id="shopify">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
                 <div class="p-3">
-                    <h4 style="color: #2BBCEF;" class="pt-3">
+                    <h4 style="color: #2BBCEF;" class="pt-3" id="seo_basic_package">
                         BASIC</h4>
                 </div>
                 <div class="bg-successs">
-                    <h2 class="pt-2">$899 - $1399</h2>
-
+                    <h2 class="pt-2" id="seo_basic_price">$899 - $1399</h2>
                 </div>
                 <div class="padd">
-                    <ul class="first-ul">
+                    <ul class="first-ul" id="seo_basic_list">
                         <li>
                             <i class="fa-solid fa-check"></i>Competitor Analysis
                         </li>
@@ -370,7 +372,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_basic">Order Now</button>
 
 
 
@@ -381,14 +383,14 @@ include 'includes/header.php';
             <!-- -----card-2--- -->
             <div class="card scroll-card-2">
                 <div class="p-3">
-                    <h4 style="color:  #002966;" class="text-center pt-3">
+                    <h4 style="color:  #002966;" class="text-center pt-3" id="seo_business_package">
                         BUSINESS</h4>
                 </div>
                 <div class="bg-price">
-                    <h2 class="pt-2 text-center">$1499 - $1999</h2>
+                    <h2 class="pt-2 text-center" id="seo_business_price">$1499 - $1999</h2>
                 </div>
                 <div class="padd">
-                    <ul class="second-ul">
+                    <ul class="second-ul" id="seo_business_list">
                         <li>
                             <i class="fa-solid fa-check"></i> Prior Analysis
                         </li>
@@ -502,7 +504,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_business">Order Now</button>
 
 
 
@@ -513,15 +515,15 @@ include 'includes/header.php';
             <!-- -----card-3--- -->
             <div class="card scroll-card-3">
                 <div class="p-3">
-                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3">
+                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3" id="seo_premium_package">
                         PREMIUM</h4>
                 </div>
                 <div class="bg-price-3">
-                    <h2 style="text-align: right; " class="pt-2 ">$2199 - $2499</h2>
+                    <h2 style="text-align: right; " class="pt-2 " id="seo_premium_price">$2199 - $2499</h2>
                     <!-- <h3 style="text-align: right;">/Month</h3> -->
                 </div>
                 <div class="padd">
-                    <ul class="third-ul">
+                    <ul class="third-ul" id="seo_premium_list">
                         <li>
                             <i class="fa-solid fa-check"></i> Business Analysis
                         </li>
@@ -641,23 +643,24 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="seo_premium">Order Now</button>
                 </div>
             </div>
         </div>
-        <!-- ---Digital marketing--- -->
+
+        <!-- ---Graphic Designing--- -->
         <div class="tab-content PricingCard" id="e-store">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
                 <div class="p-3">
-                    <h4 style="color: #2BBCEF;" class="pt-3">
+                    <h4 style="color: #2BBCEF;" class="pt-3" id="gd_basic_package">
                         BASIC</h4>
                 </div>
                 <div class="bg-successs">
-                    <h2 class="pt-2">$25 - $75</h2>
+                    <h2 class="pt-2" id="gd_basic_price">$25 - $75</h2>
                 </div>
                 <div class="padd">
-                    <ul class="first-ul">
+                    <ul class="first-ul" id="gd_basic_list">
                         <li>
                             <i class="fa-solid fa-check"></i> 2 - 5 Initial Logo Concepts
                         </li>
@@ -683,21 +686,21 @@ include 'includes/header.php';
                         </li>
                     </ul>
                     <br>
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_basic">Order Now</button>
                 </div>
             </div>
 
             <!-- -----card-2--- -->
             <div class="card scroll-card-2">
                 <div class="p-3">
-                    <h4 style="color:  #002966;" class="text-center pt-3">
+                    <h4 style="color:  #002966;" class="text-center pt-3" id="gd_business_package">
                         BUSINESS</h4>
                 </div>
                 <div class="bg-price">
-                    <h2 class="pt-2 text-center">$25 - $75</h2>
+                    <h2 class="pt-2 text-center" id="gd_business_price">$25 - $75</h2>
                 </div>
                 <div class="padd">
-                    <ul class="second-ul">
+                    <ul class="second-ul" id="gd_business_list">
                         <li>
                             <i class="fa-solid fa-check"></i>2 - 5 Initial Banner or Social Media Post Concepts
                         </li>
@@ -729,7 +732,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_business">Order Now</button>
 
 
 
@@ -740,14 +743,14 @@ include 'includes/header.php';
             <!-- -----card-3--- -->
             <div class="card scroll-card-3">
                 <div class="p-3">
-                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3">
+                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3" id="gd_premium_package">
                         PREMIUM</h4>
                 </div>
                 <div class="bg-price-3">
-                    <h2 style="text-align: right;" class="pt-2 ">$99 - $399</h2>
+                    <h2 style="text-align: right;" class="pt-2 " id="gd_premium_price">$99 - $399</h2>
                 </div>
                 <div class="padd">
-                    <ul class="third-ul">
+                    <ul class="third-ul" id="gd_premium_list">
                         <li>
                             <i class="fa-solid fa-check"></i> UI/UX Design for 1 - 18 pages
                         </li>
@@ -775,30 +778,29 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="gd_premium">Order Now</button>
 
 
 
 
                 </div>
             </div>
-
-            <!-- -----card-1--- -->
         </div>
+
         <!-- Social Media -->
         <div class="tab-content PricingCard" id="branding">
             <!-- -----card-1--- -->
             <div class="card scroll-card-1">
                 <div class="p-3">
-                    <h4 style="color: #2BBCEF;" class="pt-3">
+                    <h4 style="color: #2BBCEF;" class="pt-3" id="sm_basic_package">
                         BASIC</h4>
                 </div>
                 <div class="bg-successs">
-                    <h2 class="pt-2">$149.00 </h2>
+                    <h2 class="pt-2" id="sm_basic_price">$149.00 </h2>
 
                 </div>
                 <div class="padd">
-                    <ul class="first-ul">
+                    <ul class="first-ul" id="sm_basic_list">
                         <li>
                             <i class="fa-solid fa-check"></i> Posts 15
                         </li>
@@ -859,7 +861,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button class="btn">Order Now</button>
+                    <button class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_basic">Order Now</button>
 
 
 
@@ -870,15 +872,15 @@ include 'includes/header.php';
             <!-- -----card-2--- -->
             <div class="card scroll-card-2">
                 <div class="p-3">
-                    <h4 style="color:  #002966;" class="text-center pt-3">
+                    <h4 style="color:  #002966;" class="text-center pt-3" id="sm_business_package">
                         BUSINESS</h4>
                 </div>
                 <div class="bg-price">
-                    <h2 class="pt-2 text-center">$249.00</h2>
+                    <h2 class="pt-2 text-center" id="sm_business_price">$249.00</h2>
 
                 </div>
                 <div class="padd">
-                    <ul class="second-ul">
+                    <ul class="second-ul" id="sm_business_list">
                         <li>
                             <i class="fa-solid fa-check"></i> Posts 20
                         </li>
@@ -943,7 +945,7 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #002966;" class="btn">Order Now</button>
+                    <button style="background-color:  #002966;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_business">Order Now</button>
 
 
 
@@ -954,15 +956,14 @@ include 'includes/header.php';
             <!-- -----card-3--- -->
             <div class="card scroll-card-3">
                 <div class="p-3">
-                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3">
+                    <h4 style="color:  #fca62d;text-align: right;" class="pt-3" id="sm_premium_package">
                         PREMIUM</h4>
                 </div>
                 <div class="bg-price-3">
-                    <h2 style="text-align: right;" class="pt-2 ">$349.00</h2>
-
+                    <h2 style="text-align: right;" class="pt-2 " id="sm_premium_price">$349.00</h2>
                 </div>
                 <div class="padd">
-                    <ul class="third-ul">
+                    <ul class="third-ul" id="sm_premium_list">
                         <li>
                             <i class="fa-solid fa-check"></i> Posts 30
                         </li>
@@ -1027,17 +1028,14 @@ include 'includes/header.php';
                     <br>
 
 
-                    <button style="background-color:  #fca62d;" class="btn">Order Now</button>
+                    <button style="background-color:  #fca62d;" class="btn order_btn" data-bs-toggle="modal" data-bs-target="#order" id="sm_premium">Order Now</button>
 
 
 
 
                 </div>
             </div>
-
-
         </div>
-
     </div>
 </section>
 </div>
@@ -1049,11 +1047,12 @@ include 'includes/header.php';
 
 
 <!-- Modal -->
-<div class="container">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="container">
+    <div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h2>web development order</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="form-container">
@@ -1077,13 +1076,66 @@ include 'includes/header.php';
             </div>
         </div>
     </div>
+</div> -->
+<div class="container">
+    <div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="form-container">
+
+                    <div>
+                        <h2 class="modal-heading"></h2>
+                        <div class="p-3">
+                            <h4 style="" class="modal-package"></h4>
+                        </div>
+                        <div class="price-bg">
+                            <h2 class="modal-price"></h2>
+                        </div>
+                        <ul class="modal-orderlist"></ul>
+                    </div>
+                    
+                    <form class="form">
+                        <input type="hidden" name="" id="" class="inp-package">
+                        <input type="hidden" name="" id="" class="inp-price">
+                        <div class="form-group">
+                            <label for="name">Your Good Name</label>
+                            <input type="text" id="user_name" name="name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="text" id="user_email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Your Address</label>
+                            <input type="text" id="user_address" name="address" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="user_message" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <!-- <button class="form-submit-btn" id="user_submit" type="submit">Submit</button> -->
+                    </form>
+                    <button name="orderBtn" class="form-submit-btn modal-btn bg-warning w-100" id="user_submit">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Modal -->
+<!-- /Modal -->
 
 
-
-
+<!-- Hidden pop-up container -->
+<div id="custom-popup" class="popup-container" style="display: none;">
+    <div class="popup-content">
+        <h3>Your order is submitted!</h3>
+        <p>Thank you for your order.</p>
+        <i class="fa-solid fa-check"></i>
+    </div>
+</div>
 
 
 
@@ -1092,36 +1144,66 @@ include 'includes/header.php';
 
 
 <!-- icons -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-const openTab = (tabName) => {
-    const tabs = ["design", "shopify", "e-store", "branding", "animation", "seo"];
+    // $(document).ready(function(){
+        // alert("k");
+        // $(".order_btn").click(function(){
+        //     var orderId = $(this).attr('id');
+        //     alert('Check'+orderId);
+        //     var dataToSend = {
+        //         orderId: orderId
+        //     };
 
-    tabs.forEach((tab) => {
-        const tabButton = document.getElementById(`${tab}-btn`);
-        if (tabButton) {
-            tabButton.classList.remove("active");
-        }
-        const element = document.getElementById(tab);
-        if (element) {
-            if (tab === tabName) {
-                element.style.display = "flex";
-                element.classList.add("flip-right");
-            } else {
-                element.style.display = "none";
-                element.classList.remove("flip-right");
+        //     alert(check."okkkkk");
+
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "process.php",
+        //         data: dataToSend,
+        //         success: function(response){
+        //             console.log(response);
+        //         }
+        //     });
+        // });
+        
+        
+        
+    const openTab = (tabName) => {
+        const tabs = ["design", "shopify", "e-store", "branding", "animation", "seo"];
+
+        tabs.forEach((tab) => {
+            const tabButton = document.getElementById(`${tab}-btn`);
+            if (tabButton) {
+                tabButton.classList.remove("active");
             }
+            const element = document.getElementById(tab);
+            if (element) {
+                if (tab === tabName) {
+                    element.style.display = "flex";
+                    element.classList.add("flip-right");
+                } else {
+                    element.style.display = "none";
+                    element.classList.remove("flip-right");
+                }
+            }
+        });
+
+        // Add the 'active' class to the clicked button
+        const clickedTabButton = document.getElementById(`${tabName}-btn`);
+        if (clickedTabButton) {
+            clickedTabButton.classList.add("active");
         }
-    });
+    };
+// });
 
-    // Add the 'active' class to the clicked button
-    const clickedTabButton = document.getElementById(`${tabName}-btn`);
-    if (clickedTabButton) {
-        clickedTabButton.classList.add("active");
-    }
-};
+
+
+        
+
+
 </script>
-
-
 
 
 
